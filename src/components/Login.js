@@ -5,7 +5,7 @@ const Login = (props) => {
     <Container>
       <Nav>
         <a href="/">
-          <img src="/images/login-logo.svg" alt="" />
+          <img src="login-logo.svg" alt="" /> lw
         </a>
       </Nav>
     </Container>
