@@ -1,0 +1,22 @@
+.loginHeaderContainer {
+    height: 80px;
+    border: 1px solid;
+    display: flex;
+
+}
+.loginLogo {
+    width: 105px;
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginNavIcons {
+    border: 1px solid;
+    width: 400px;
+    ul {
+        list-style: none;
+        display: flex;
+    }
+}
