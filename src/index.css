@@ -1,6 +1,8 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 :root,
@@ -38,4 +40,12 @@ ul {
 
 body {
   font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color:rgb(112, 112, 112);
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
