@@ -39,12 +39,16 @@ ul {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #fff;
 }
 a {
   text-decoration: none;
   cursor: pointer;
-  color:rgb(112, 112, 112);
+  color: rgb(112, 112, 112);
 }
 a:hover {
   color: rgba(0, 0, 0, 0.8);

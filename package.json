@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:css": "postcss src/styles/tailwind.css -o dist/styles.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
   }
 }
