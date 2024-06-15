@@ -1,6 +1,8 @@
 import { useState } from "react";
 import LoginHeader from "../../components/LoginHeader/LoginHeader";
 import "./Login.scss";
+import LoginSections from "../../components/login-sections/LoginSections";
+import { sectionsData } from "../../data";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -68,7 +70,7 @@ const Login = () => {
             ,and{" "}
             <a href="https://www.linkedin.com/legal/cookie-policy?trk=homepage-basic_auth-button_cookie-policy">
               Cookie Policy
-          </a>
+            </a>
             .
           </p>
 
@@ -83,6 +85,16 @@ const Login = () => {
           <img src="login.svg" alt="" />
         </div>
       </section>
+      <div className="login-sections">
+        {sectionsData.map((section, index) => (
+          <LoginSections
+            key={index}
+            header={section.header}
+            description={section.description}
+            buttons={section.buttons}
+          />
+        ))}
+      </div>
     </div>
   );
 };
