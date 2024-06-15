@@ -90,8 +90,10 @@ const Login = () => {
           <LoginSections
             key={index}
             header={section.header}
+            buttonHeader={section.buttonHeader}
             description={section.description}
             buttons={section.buttons}
+            coloredBackground={section.coloredBackground}
           />
         ))}
       </div>
