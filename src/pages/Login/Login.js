@@ -1,8 +1,9 @@
 import { useState } from "react";
-import LoginHeader from "../../components/LoginHeader/LoginHeader";
 import "./Login.scss";
-import LoginSections from "../../components/login-sections/LoginSections";
 import { sectionsData } from "../../data";
+import LoginHeader from "../../components/login-components/LoginHeader/LoginHeader";
+import LoginSections from "../../components/login-components/login-sections/LoginSections";
+import Gallery from "../../components/login-components/OpenToWork/Z-Gallery";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -96,6 +97,10 @@ const Login = () => {
             coloredBackground={section.coloredBackground}
           />
         ))}
+      </div>
+
+      <div className="opentowork">
+        <Gallery />
       </div>
     </div>
   );

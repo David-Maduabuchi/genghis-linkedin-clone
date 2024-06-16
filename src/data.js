@@ -86,7 +86,7 @@ export const sectionsData = [
     header: "Keep your mind sharp with games",
     description:
       "Take a break and reconnect with your network through quick daily games.",
-    buttonHeader: "Suggested Tools",
+    buttonHeader: "",
     buttons: [
       { buttonName: "Pinpoint", color: "#000" },
       { buttonName: "Queens", color: "#000" },
