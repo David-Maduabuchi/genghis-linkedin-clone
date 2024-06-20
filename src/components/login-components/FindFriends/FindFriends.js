@@ -9,15 +9,15 @@ const FindFriends = () => {
           <div className="findFriendsButtons">
             <div className="FriendsButton">
               Find a coworker or classmate
-              <img src="arrow-head-right.svg" alt="" />
+              <img src="black-arrow-head-right.svg" alt="" />
             </div>
             <div className="FriendsButton">
               Find a new job
-              <img src="arrow-head-right.svg" alt="" />
+              <img src="black-arrow-head-right.svg" alt="" />
             </div>
             <div className="FriendsButton">
               Find a course or training
-              <img src="arrow-head-right.svg" alt="" />
+              <img src="black-arrow-head-right.svg" alt="" />
             </div>
           </div>
         </section>
