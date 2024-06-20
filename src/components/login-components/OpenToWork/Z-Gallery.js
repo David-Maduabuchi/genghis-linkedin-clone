@@ -1,9 +1,10 @@
 import { useState } from "react";
 import OpenToWork from "./OpenToWork";
 import "./Z-Gallery.scss";
-import Conversations from "./Conversations";
-import Up2Date from "./Up2Date";
-const components = [<OpenToWork />, <Conversations />, <Up2Date />];
+import { ConversationsData, OpenToWorkData, upToDateData } from "../../../data";
+
+// This is the list of components available for the side show
+const components = [<OpenToWork {...OpenToWorkData}/>, <OpenToWork {...ConversationsData} />, <OpenToWork {...upToDateData} />];
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

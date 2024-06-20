@@ -4,6 +4,8 @@ import { sectionsData } from "../../data";
 import LoginHeader from "../../components/login-components/LoginHeader/LoginHeader";
 import LoginSections from "../../components/login-components/login-sections/LoginSections";
 import Gallery from "../../components/login-components/OpenToWork/Z-Gallery";
+import ConectAndLearn from "../../components/login-components/ConnectAndLearn/ConectAndLearn";
+import FindFriends from "../../components/login-components/FindFriends/FindFriends";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -11,6 +13,7 @@ const Login = () => {
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
+
   return (
     <div className="main-login-container">
       <LoginHeader />
@@ -101,6 +104,13 @@ const Login = () => {
 
       <div className="opentowork">
         <Gallery />
+      </div>
+
+      <div className="connect-and-learn">
+        <ConectAndLearn />
+      </div>
+      <div className="Find-Friends">
+        <FindFriends />
       </div>
     </div>
   );
