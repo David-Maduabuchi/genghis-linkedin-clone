@@ -294,3 +294,53 @@ export const LoginSkills = [
   },
 ];
  
+// data.js
+export const footerData = {
+  sections: [
+    {
+      title: "General",
+      links: [
+        { text: "About", url: "#" },
+        { text: "Careers", url: "#" },
+        { text: "Advertising", url: "#" },
+        { text: "Talent Solutions", url: "#" },
+        { text: "Marketing Solutions", url: "#" },
+        { text: "Sales Solutions", url: "#" },
+        { text: "Safety Center", url: "#" },
+        { text: "Community Guidelines", url: "#" },
+      ],
+    },
+    {
+      title: "Community",
+      links: [
+        { text: "LinkedIn Corporation", url: "#" },
+        { text: "LinkedIn Jobs", url: "#" },
+        { text: "Salary", url: "#" },
+        { text: "Mobile", url: "#" },
+        { text: "Learning", url: "#" },
+        { text: "ProFinder", url: "#" },
+        { text: "News", url: "#" },
+      ],
+    },
+    {
+      title: "More",
+      links: [
+        { text: "SlideShare", url: "#" },
+        { text: "LinkedIn Learning", url: "#" },
+        { text: "Other Services", url: "#" },
+      ],
+    },
+  ],
+  policies: [
+    { text: "User Agreement", url: "#" },
+    { text: "Privacy Policy", url: "#" },
+    { text: "Cookie Policy", url: "#" },
+  ],
+  languages: ["English", "Spanish"],
+  socialLinks: [
+    { platform: "Twitter", url: "#" },
+    { platform: "Facebook", url: "#" },
+    { platform: "Instagram", url: "#" },
+    { platform: "YouTube", url: "#" },
+  ],
+};

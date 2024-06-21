@@ -3,17 +3,16 @@
   align-items: center;
   display: flex;
   width: 100vw;
-  position: absolute; 
+  position: absolute;
   left: 0;
   flex-direction: column;
-  border: 1px solid;
   color: rgba(0, 0, 0, 0.9);
 
   .joinSubContainer {
-    margin-top: 230px;
+    width: 1000px;
+    margin-top: 150px;
     h1 {
       font-size: 48px;
-      width: 1000px;
       font-weight: 200;
     }
     button {

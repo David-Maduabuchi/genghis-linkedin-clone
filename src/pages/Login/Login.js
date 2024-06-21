@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./Login.scss";
-import { sectionsData } from "../../data";
+import { footerData, sectionsData } from "../../data";
 import LoginHeader from "../../components/login-components/LoginHeader/LoginHeader";
 import LoginSections from "../../components/login-components/login-sections/LoginSections";
 import Gallery from "../../components/login-components/OpenToWork/Z-Gallery";
 import ConectAndLearn from "../../components/login-components/ConnectAndLearn/ConectAndLearn";
 import FindFriends from "../../components/login-components/FindFriends/FindFriends";
 import JoinColleagues from "../../components/login-components/JoinColleagues/JoinColleagues";
+import Footer from "../../components/login-components/LoginFooter/LoginFooter";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -115,6 +116,9 @@ const Login = () => {
       </div>
       <div className="join-colleagues">
         <JoinColleagues />
+      </div>
+      <div className="footer">
+        <Footer data={footerData} />
       </div>
     </div>
   );
