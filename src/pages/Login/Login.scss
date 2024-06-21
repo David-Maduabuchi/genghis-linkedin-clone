@@ -1,6 +1,7 @@
 .main-login-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -180,10 +181,42 @@
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
 }
 .Find-Friends {
-    height: 950px;
-    //there is a good reason why this shit is like this, position absolute chills at the top ofits parent element. 
+  height: 950px;
+  //there is a good reason why this shit is like this, position absolute chills at the top ofits parent element.
 }
 
 .join-colleagues {
   width: 100%;
+  height: 980px;
+}
+
+.footer {
+  height: 420px;
+}
+
+.LoginBottom {
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;align-items: center;
+  width: 1000px;
+  font-size: 13px;
+padding-bottom: 30px;
+
+  img {
+    width: 56px;
+    height: 14px;
+  }
+
+  h6 {
+    color: rgb(100, 100, 100);
+    font-weight: 200;
+  }
+
+  span {
+    &:hover {
+      color: #0a66c2;
+      text-decoration: underline;
+    }
+  }
 }

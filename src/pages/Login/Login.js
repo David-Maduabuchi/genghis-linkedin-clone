@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Login.scss";
-import { footerData, sectionsData } from "../../data";
+import { footerData, loginBottom, sectionsData } from "../../data";
 import LoginHeader from "../../components/login-components/LoginHeader/LoginHeader";
 import LoginSections from "../../components/login-components/login-sections/LoginSections";
 import Gallery from "../../components/login-components/OpenToWork/Z-Gallery";
@@ -22,7 +22,7 @@ const Login = () => {
       <h1 className="main-heading">Welcome to your professional community</h1>
 
       <section>
-        <form className="loginForm">
+        <form method="POST" className="loginForm">
           {/* Each from group is an input field */}
           <div className="form-group">
             <label htmlFor="email">Email or Phone Number</label>
@@ -119,6 +119,15 @@ const Login = () => {
       </div>
       <div className="footer">
         <Footer data={footerData} />
+      </div>
+      <div className="LoginBottom">
+        <img src="black-white-logo.svg" alt="" />
+        <h6>© 2024</h6>
+        {loginBottom.map((item, index) => (
+          <a key={index} href={item.url}>
+            <span>{item.title}</span>
+          </a>
+        ))}
       </div>
     </div>
   );

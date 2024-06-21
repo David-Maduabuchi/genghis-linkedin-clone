@@ -99,22 +99,24 @@ export const sectionsData = [
 
 export const OpenToWorkData = {
   header: "Let the right people know you're open to work",
-  description: "With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.",
+  description:
+    "With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.",
   image: "open-rhs.png",
 };
 
 export const ConversationsData = {
   header: "Conversations today could lead to opportunity tomorrow",
-  description: "Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career.",
-  image: "convo.rhs.png"
-}
+  description:
+    "Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career.",
+  image: "convo.rhs.png",
+};
 
 export const upToDateData = {
   header: "Stay up to date on your industry",
-  description: "From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry.",
-  image: "upToDate.png"
-}
-
+  description:
+    "From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry.",
+  image: "upToDate.png",
+};
 
 export const LoginSkills = [
   {
@@ -293,54 +295,97 @@ export const LoginSkills = [
     noOfCourses: "1750+ Courses",
   },
 ];
- 
+
 // data.js
 export const footerData = {
   sections: [
     {
       title: "General",
       links: [
-        { text: "About", url: "#" },
-        { text: "Careers", url: "#" },
-        { text: "Advertising", url: "#" },
-        { text: "Talent Solutions", url: "#" },
-        { text: "Marketing Solutions", url: "#" },
-        { text: "Sales Solutions", url: "#" },
-        { text: "Safety Center", url: "#" },
-        { text: "Community Guidelines", url: "#" },
+        { text: "Signup", url: "#" },
+        { text: "Help Center", url: "#" },
+        { text: "About ", url: "#" },
+        { text: "Press", url: "#" },
+        { text: "Blog", url: "#" },
+        { text: "Caereers", url: "#" },
+        { text: "Developers", url: "#" },
       ],
     },
     {
-      title: "Community",
+      title: "Browse LinkedIn",
       links: [
-        { text: "LinkedIn Corporation", url: "#" },
-        { text: "LinkedIn Jobs", url: "#" },
-        { text: "Salary", url: "#" },
-        { text: "Mobile", url: "#" },
         { text: "Learning", url: "#" },
-        { text: "ProFinder", url: "#" },
-        { text: "News", url: "#" },
+        { text: " Jobs", url: "#" },
+        { text: "Games", url: "#" },
+        { text: "Salary   ", url: "#" },
+        { text: "Mobile", url: "#" },
+        { text: "Services", url: "#" },
+        { text: "Products", url: "#" },
+        { text: "Top Companies Hub", url: "#" },
       ],
     },
     {
-      title: "More",
+      title: "Business Solutions",
       links: [
-        { text: "SlideShare", url: "#" },
-        { text: "LinkedIn Learning", url: "#" },
-        { text: "Other Services", url: "#" },
+        { text: "Talent", url: "#" },
+        { text: "Marketing", url: "#" },
+        { text: "Sales", url: "#" },
+        { text: "Learning", url: "#" },
       ],
     },
-  ],
-  policies: [
-    { text: "User Agreement", url: "#" },
-    { text: "Privacy Policy", url: "#" },
-    { text: "Cookie Policy", url: "#" },
-  ],
-  languages: ["English", "Spanish"],
-  socialLinks: [
-    { platform: "Twitter", url: "#" },
-    { platform: "Facebook", url: "#" },
-    { platform: "Instagram", url: "#" },
-    { platform: "YouTube", url: "#" },
+    {
+      title: "Directories",
+      links: [
+        { text: "Members", url: "#" },
+        { text: "Jobs", url: "#" },
+        { text: "Companies", url: "#" },
+        { text: "Featured", url: "#" },
+        { text: "Learning", url: "#" },
+        { text: "Posts", url: "#" },
+        { text: "Articles", url: "#" },
+        { text: "Schools", url: "#" },
+        { text: "News", url: "#" },
+        { text: "News Letters", url: "#" },
+        { text: "Services", url: "#" },
+        { text: "Products", url: "#" },
+        { text: "Advice", url: "#" },
+        { text: "People Search", url: "#" },
+      ],
+    },
   ],
 };
+
+export const loginBottom = [
+  {
+    title: "About",
+    url: "",
+  },
+  {
+    title: "Accessibility",
+    url: "",
+  },
+  {
+    title: "User Agreement",
+    url: "",
+  },
+  {
+    title: "Privacy Policy",
+    url: "",
+  },
+  {
+    title: "Cookie Policy",
+    url: "",
+  },
+  {
+    title: "Copyright Policy",
+    url: "",
+  },
+  {
+    title: "Brand Policy",
+    url: "",
+  },
+  {
+    title: "Community Guidelines",
+    url: "",
+  },
+];

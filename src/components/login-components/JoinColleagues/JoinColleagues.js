@@ -6,6 +6,7 @@ const JoinColleagues = () => {
       className="joinColleagues"
       style={{
         backgroundImage: "url(join-colleagues.png)",
+        backgroundSize: "cover",
       }}
     >
       <div className="joinSubContainer">
