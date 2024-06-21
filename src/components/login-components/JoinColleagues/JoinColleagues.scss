@@ -1,0 +1,29 @@
+.joinColleagues {
+  height: 980px;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  position: absolute; 
+  left: 0;
+  flex-direction: column;
+  border: 1px solid;
+  color: rgba(0, 0, 0, 0.9);
+
+  .joinSubContainer {
+    margin-top: 230px;
+    h1 {
+      font-size: 48px;
+      width: 1000px;
+      font-weight: 200;
+    }
+    button {
+      padding: 12px 20px;
+      border-radius: 20px;
+      border: 1px solid #0a66c2;
+      background: #0a66c2;
+      cursor: pointer;
+      color: white;
+      font-size: 12px;
+    }
+  }
+}

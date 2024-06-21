@@ -6,6 +6,7 @@ import LoginSections from "../../components/login-components/login-sections/Logi
 import Gallery from "../../components/login-components/OpenToWork/Z-Gallery";
 import ConectAndLearn from "../../components/login-components/ConnectAndLearn/ConectAndLearn";
 import FindFriends from "../../components/login-components/FindFriends/FindFriends";
+import JoinColleagues from "../../components/login-components/JoinColleagues/JoinColleagues";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -111,6 +112,9 @@ const Login = () => {
       </div>
       <div className="Find-Friends">
         <FindFriends />
+      </div>
+      <div className="join-colleagues">
+        <JoinColleagues />
       </div>
     </div>
   );
