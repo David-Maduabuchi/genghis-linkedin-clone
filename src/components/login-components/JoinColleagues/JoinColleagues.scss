@@ -1,16 +1,25 @@
+@import "../../../sass/responsive.scss";
 .joinColleagues {
   height: 980px;
   align-items: center;
   display: flex;
   width: 100vw;
   position: absolute;
+  background-image: url("../../../../public/join-colleagues.png");
   left: 0;
   flex-direction: column;
   color: rgba(0, 0, 0, 0.9);
+    @include sm { 
+      background-image: none;
+      height: auto;
+    }
 
   .joinSubContainer {
-    width: 1000px;
+    width: 1140px;
     margin-top: 150px;
+    @include sm {
+      width: 100%;
+    }
     h1 {
       font-size: 48px;
       font-weight: 200;

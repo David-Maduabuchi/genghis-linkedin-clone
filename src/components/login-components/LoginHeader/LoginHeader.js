@@ -152,10 +152,10 @@ const LoginHeader = () => {
         </ul>
       </div>
       <div className="joinSignup">
-        <a href="http://">
-          Join Now
+        <a href="http://" className="join">Join now</a>
+        <a href="####" className="signup">
+          <button>Sign Up</button>
         </a>
-        <button>Sign Up</button>
       </div>
     </div>
   );

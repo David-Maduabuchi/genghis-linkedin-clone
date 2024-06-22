@@ -69,8 +69,8 @@ const Login = () => {
             <a href="https://www.linkedin.com/legal/user-agreement?trk=homepage-basic_auth-button_user-agreement">
               User Agreement
             </a>
-            ,{" "}
-            <a href="https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_auth-button_privacy-policy">
+            , s://www.linkedin.com/legal/privacy-polic
+            <a href="httpy?trk=homepage-basic_auth-button_privacy-policy">
               Privacy Policy
             </a>
             ,and{" "}
@@ -121,8 +121,10 @@ const Login = () => {
         <Footer data={footerData} />
       </div>
       <div className="LoginBottom">
-        <img src="black-white-logo.svg" alt="" />
-        <h6>© 2024</h6>
+        <div className="copyright">
+          <img src="black-white-logo.svg" alt="" />
+          <h6>© 2024</h6>
+        </div>
         {loginBottom.map((item, index) => (
           <a key={index} href={item.url}>
             <span>{item.title}</span>

@@ -1,0 +1,7 @@
+@import "./sass/responsive.scss";
+.App {
+  max-width: 1400px;
+  @include sm {
+    width: 100vw;
+  }
+}

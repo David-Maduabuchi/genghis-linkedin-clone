@@ -1,3 +1,4 @@
+@import "../../../sass/responsive.scss";
 .open-to-work-container {
   display: flex;
   justify-content: space-between;
@@ -5,6 +6,9 @@
   padding: 20px;
   background-color: #f5f5f5;
   border-radius: 8px;
+  @include sm {
+    flex-direction: column-reverse;
+  }
 
   .open-lhs {
     width: 100%;

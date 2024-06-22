@@ -1,3 +1,5 @@
+@import "../../../sass/responsive.scss";
+
 .loginHeaderContainer {
   height: 80px;
   display: grid;
@@ -5,6 +7,10 @@
   align-items: center;
   gap: 10px;
   padding: 0 100px;
+
+  @include sm {
+    padding: 0;
+  }
 }
 
 .loginLogo {
@@ -14,8 +20,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include sm {
+    width: 100px;
+  }
 }
 .loginNavIcons {
+  @include sm {
+    display: none;
+  }
   width: 100%;
   ul {
     width: 480px;
@@ -54,7 +66,10 @@
   gap: 10px;
   justify-content: space-around;
   align-items: center;
-  a {
+  @include sm {
+    justify-content: start;
+  }
+  .join {
     min-height: 30px;
     padding: 8px;
     text-align: center;
@@ -65,10 +80,14 @@
     font-weight: 600;
     line-height: 1.25;
     width: 128px;
-  }
-  a:hover {
-    background-color: #e9e8e8;
-    border-radius: 30px;
+    &:hover {
+      background-color: #e9e8e8;
+      border-radius: 30px;
+    }
+    @include sm {
+      width: 100px;
+      padding: 0;
+    }
   }
 
   button {
@@ -80,10 +99,14 @@
     font-weight: 600;
     color: #0a66c2;
     background-color: transparent;
-  }
-  button:hover {
-    background-color: #cde6ff;
-    cursor: pointer;
-    color: #003a74;
+    @include sm {
+      padding: 15px 0;
+      
+    }
+    &:hover {
+      background-color: #cde6ff;
+      cursor: pointer;
+      color: #003a74;
+    }
   }
 }

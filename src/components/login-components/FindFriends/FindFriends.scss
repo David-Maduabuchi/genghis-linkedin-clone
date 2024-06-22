@@ -1,3 +1,4 @@
+@import "../../../sass/responsive.scss";
 .findFriends {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -8,15 +9,20 @@
   position: absolute;
   width: 100vw;
   left: 0;
+  @include sm {
+    position: relative;
+  }
   .findFriendsLHS {
     background-color: rgb(240, 236, 237);
     display: flex;
     justify-content: center;
     width: 100%;  
-    
+  
     align-items: center;
     height: 100%;
-
+    @include sm {
+      width: 100vw;
+    }
     section {
       display: flex;
       justify-content: start;
@@ -24,6 +30,10 @@
       margin-left: auto;
       width: 600px;
       flex-direction: column;
+
+      @include sm {
+        width: 100vw;
+      }
       h1 {
         font-size: 40px;
         text-align: start;
@@ -31,6 +41,11 @@
         color: #b24040;
         margin: 0 0 8px;
         font-weight: 400;
+        @include sm {
+          margin: 0;
+          padding: 0;
+          width: 100vw;
+        }
       }
       p {
         font-size: 40px;
@@ -60,6 +75,10 @@
           line-height: 1.25;
           cursor: pointer;
 
+          @include sm {
+            width: 80%;
+          }
+
           &:hover {
             background-color: #dadada;
           }
@@ -70,6 +89,9 @@
   .findFriendsRHS {
     position: relative;
     height: 100%;
+    @include sm {
+      display: none;
+    }
 
     img {
       position: absolute;
