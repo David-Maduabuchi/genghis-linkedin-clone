@@ -69,8 +69,8 @@ const Login = () => {
             <a href="https://www.linkedin.com/legal/user-agreement?trk=homepage-basic_auth-button_user-agreement">
               User Agreement
             </a>
-            , s://www.linkedin.com/legal/privacy-polic
-            <a href="httpy?trk=homepage-basic_auth-button_privacy-policy">
+            , {" "}
+            <a href="https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_auth-button_privacy-policy">
               Privacy Policy
             </a>
             ,and{" "}
