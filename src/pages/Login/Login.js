@@ -21,7 +21,7 @@ const Login = () => {
       <LoginHeader />
       <h1 className="main-heading">Welcome to your professional community</h1>
 
-      <section>
+      <section className="login-section">
         <form method="POST" className="loginForm">
           {/* Each from group is an input field */}
           <div className="form-group">

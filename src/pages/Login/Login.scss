@@ -6,18 +6,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  section {
+  .login-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 0 100px;
-
+    width: auto;
     @include sm {
-      display: grid;
-      padding: 10px;
-      border: 1px solid red;
-      
-      width: 100%;
+      padding: 0;
+      margin: 10px;
       grid-template-columns: 1fr;
     }
 
@@ -27,7 +24,6 @@
       flex-direction: column;
       @include sm {
         width: 100%;
-        border: 1px solid blue;
       }
 
       a {
@@ -61,7 +57,8 @@
           background-color: #013e7a;
         }
         @include sm {
-          width: 100px;
+          width: 80%;
+          margin: auto;
         }
       }
 
@@ -76,6 +73,10 @@
           font-size: 14px;
           font-weight: 600;
           color: rgba($color: #000000, $alpha: 0.75);
+
+          @include sm {
+            font-size: 12px;
+          }
         }
         input {
           height: 55px;
@@ -87,7 +88,6 @@
             background-color: rgb(245, 245, 245);
             border: 2px solid rgba(0, 0, 0, 0.75);
           }
-
         }
 
         .password-wrapper {
@@ -112,7 +112,6 @@
             font-size: 16px;
             color: rgba($color: #000000, $alpha: 0.75);
             background-color: transparent;
-            
           }
 
           button {
@@ -181,6 +180,7 @@
           width: 80%;
           display: flex;
           margin: auto;
+          display: none;
         }
       }
     }
