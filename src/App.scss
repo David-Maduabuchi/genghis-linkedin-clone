@@ -3,5 +3,6 @@
   max-width: 1400px;
   @include sm {
     width: 100vw;
+    overflow: hidden;
   }
 }
