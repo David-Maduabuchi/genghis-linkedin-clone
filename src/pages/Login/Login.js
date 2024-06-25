@@ -26,12 +26,7 @@ const Login = () => {
           {/* Each from group is an input field */}
           <div className="form-group">
             <label htmlFor="email">Email or Phone Number</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="david.maduabuchi.243854@unn.edu.ng"
-            />
+            <input type="email" id="email" name="email" placeholder="" />
           </div>
           {/* Each form group is an input field */}
           <div className="form-group">
@@ -69,7 +64,7 @@ const Login = () => {
             <a href="https://www.linkedin.com/legal/user-agreement?trk=homepage-basic_auth-button_user-agreement">
               User Agreement
             </a>
-            , {" "}
+            ,{" "}
             <a href="https://www.linkedin.com/legal/privacy-policy?trk=homepage-basic_auth-button_privacy-policy">
               Privacy Policy
             </a>
