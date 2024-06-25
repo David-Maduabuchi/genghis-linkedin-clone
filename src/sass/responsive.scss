@@ -5,7 +5,7 @@ $xl: 1200px;
 $xxl: 1400px;
 
 @mixin sm {
-  @media screen and (max-width: ($sm)) {
+  @media screen and (max-width: ($md)) {
     @content;
   }
 }
