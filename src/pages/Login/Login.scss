@@ -117,7 +117,6 @@
           }
 
           button {
-           
             width: 80px;
             background-color: #fff;
             padding: 0 20px;
@@ -228,6 +227,10 @@
 .Find-Friends {
   height: 950px;
   width: 100%;
+
+  @include sm {
+    height: auto;
+  }
   //there is a good reason why this shit is like this, position absolute chills at the top ofits parent element.
 }
 
@@ -235,7 +238,7 @@
   width: 100%;
   height: 980px;
   @include sm {
-    height: 550px;
+    height: auto;
   }
 }
 
