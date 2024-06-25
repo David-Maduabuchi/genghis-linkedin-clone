@@ -11,6 +11,7 @@
   left: 0;
   @include sm {
     position: relative;
+    height: auto;
   }
   .findFriendsLHS {
     background-color: rgb(240, 236, 237);
@@ -32,7 +33,7 @@
       flex-direction: column;
 
       @include sm {
-        width: 100vw;
+        padding: 20px;
       }
       h1 {
         font-size: 40px;
@@ -44,7 +45,8 @@
         @include sm {
           margin: 0;
           padding: 0;
-          width: 100vw;
+          font-size: 32px;
+          font-weight: 600; 
         }
       }
       p {
@@ -52,6 +54,12 @@
         font-weight: 200;
         line-height: 1.2;
         color: rgba(0, 0, 0, 0.9);
+
+        @include sm {
+          font-size: 20px;
+          width: 100%;
+          font-weight: 400;
+        }
       }
       .findFriendsButtons {
         display: flex;

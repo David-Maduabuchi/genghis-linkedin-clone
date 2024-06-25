@@ -5,8 +5,9 @@
   height: auto;
   padding: 50px 0;
   @include sm {
-    padding: 0;
+    padding: 20px 10px;
     flex-direction: column;
+    gap: 10px;
   }
 
   .sections-header {
@@ -18,7 +19,9 @@
       padding: 0 100px;
       @include sm {
         padding: 0;
-        width: 100%;
+        width: 80%;
+        font-weight: 400;
+        font-size: 32px;
       }
     }
 
@@ -60,6 +63,12 @@
       font-weight: 100;
       background-color: white;
       border: 1px solid;
+      @include sm {
+        height: auto;
+        width: auto;
+        font-size: 16px;
+        margin: 0 20px 15px 0;
+      }
     }
 
     .toggle-button {
