@@ -2,13 +2,13 @@
 .App {
   @include sm {
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   @include lg {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-left: auto;
     width: 100vw;
   }
