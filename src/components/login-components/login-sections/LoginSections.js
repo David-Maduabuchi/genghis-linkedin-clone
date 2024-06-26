@@ -1,6 +1,12 @@
 import "./login-sections.scss";
 import React, { useState } from "react";
-const LoginSections = ({ header, description, buttons, buttonHeader, coloredBackground }) => {
+const LoginSections = ({
+  header,
+  description,
+  buttons,
+  buttonHeader,
+  coloredBackground,
+}) => {
   const [showMore, setShowMore] = useState(false);
   const visibleButtonsCount = 10; // Number of buttons to show initially
 
@@ -15,8 +21,8 @@ const LoginSections = ({ header, description, buttons, buttonHeader, coloredBack
   return (
     <div
       className={`sections-container ${
-        coloredBackground === "" && "section-colored-header"
-      }`}
+        coloredBackground === "post" && "section-colored-header"
+      } ${coloredBackground === "header" && "header-button"}`}
     >
       <div className="sections-header">
         <h1>{header}</h1>

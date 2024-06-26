@@ -4,6 +4,7 @@ export const sectionsData = [
     description:
       "We're unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.",
     buttonHeader: "",
+    coloredBackground: "header",
     buttons: [
       { buttonName: "Marketing", color: "#000" },
       { buttonName: "Public Administration", color: "#000" },
@@ -58,7 +59,7 @@ export const sectionsData = [
   {
     header: "Post your job for millions of people to see",
     description: "",
-    coloredBackground: "",
+    coloredBackground: "post",
     buttonName: "Post a job",
     buttons: [
       { buttonName: "Post a job", color: "#0a66c2", id: "colored-one" },
