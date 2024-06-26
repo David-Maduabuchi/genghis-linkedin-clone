@@ -32,7 +32,7 @@
       @include lg {
         padding: 0 20px;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 48px;
         width: 100%;
       }
     }
@@ -48,6 +48,7 @@
       }
       @include lg {
         padding: 0 20px;
+        font-size: 20px;
       }
     }
   }

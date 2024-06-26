@@ -9,7 +9,6 @@ import JoinColleagues from "../../components/login-components/JoinColleagues/Joi
 import Footer from "../../components/login-components/LoginFooter/LoginFooter";
 
 const Login = () => {
-
   return (
     <div className="main-login-container">
       <LoginHeader />
@@ -24,7 +23,7 @@ const Login = () => {
           </div>
           <div className="google-signin-button">Sign in with email</div>
           {/* Each form group above is an input field */}
-          
+
           <p>
             By clicking By clicking Continue to join or sign in, you agree to
             LinkedIn's{" "}
@@ -43,9 +42,7 @@ const Login = () => {
           </p>
 
           <p className="new-to-linkedin?">
-            New to LinkedIn? <a href="##">
-              Join now
-            </a>
+            New to LinkedIn? <a href="##">Join now</a>
           </p>
 
           {/* Google Section */}
