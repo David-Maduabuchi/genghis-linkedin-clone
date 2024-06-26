@@ -10,6 +10,9 @@
     flex-direction: column-reverse;
   }
 
+  @include lg {
+  }
+
   .open-lhs {
     width: 100%;
     margin-right: 20px;
@@ -51,6 +54,8 @@
 
       @include sm {
         width: 100%;
+        display: flex;
+          margin: auto;
       }
     }
 
@@ -73,6 +78,7 @@
         img {
           width: 24px;
           height: 24px;
+          
         }
 
         &:hover {

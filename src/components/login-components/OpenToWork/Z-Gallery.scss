@@ -12,6 +12,9 @@
     padding: 0;
    
   }
+  @include lg {
+    padding: 0;
+  }
 
   .content-container {
     display: flex;

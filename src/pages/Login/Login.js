@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Login.scss";
 import { footerData, loginBottom, sectionsData } from "../../data";
 import LoginHeader from "../../components/login-components/LoginHeader/LoginHeader";
@@ -10,11 +9,6 @@ import JoinColleagues from "../../components/login-components/JoinColleagues/Joi
 import Footer from "../../components/login-components/LoginFooter/LoginFooter";
 
 const Login = () => {
-  const [passwordVisible, setPasswordVisible] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
-  };
 
   return (
     <div className="main-login-container">
@@ -24,40 +18,13 @@ const Login = () => {
       <section className="login-section">
         <form method="POST" className="loginForm">
           {/* Each from group is an input field */}
-          <div className="form-group">
-            <label htmlFor="email">Email or Phone Number</label>
-            <input type="email" id="email" name="email" placeholder="" />
+          <div className="google-signin-button">
+            Continue with Google{" "}
+            <img src="google.svg" alt="" className="googleauth" />
           </div>
-          {/* Each form group is an input field */}
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
-            <div className="password-wrapper">
-              <input
-                type={passwordVisible ? "text" : "password"}
-                id="password"
-                name="password"
-              />
-              <button
-                type="button"
-                onClick={togglePasswordVisibility}
-                className="toggle-button"
-              >
-                {passwordVisible ? (
-                  <span className="hide-icon">Hide</span>
-                ) : (
-                  <span className="show-icon">Show</span>
-                )}
-              </button>
-            </div>
-          </div>
+          <div className="google-signin-button">Sign in with email</div>
           {/* Each form group above is an input field */}
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            Forgot password?
-          </a>
-          <button className="signin-button">Sign in</button>
-          <span className="googlehr">
-            <hr /> or <hr />
-          </span>
+          
           <p>
             By clicking By clicking Continue to join or sign in, you agree to
             LinkedIn's{" "}
@@ -75,12 +42,13 @@ const Login = () => {
             .
           </p>
 
+          <p className="new-to-linkedin?">
+            New to LinkedIn? <a href="##">
+              Join now
+            </a>
+          </p>
+
           {/* Google Section */}
-          <div className="google-signin-button">
-            Continue with Google{" "}
-            <img src="google.svg" alt="" className="googleauth" />
-          </div>
-          <div className="google-signin-button">New to Linkedin? Join Now</div>
         </form>
         <div className="loginImage">
           <img src="login.svg" alt="" />

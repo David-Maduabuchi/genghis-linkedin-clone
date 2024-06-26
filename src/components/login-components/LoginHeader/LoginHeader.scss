@@ -14,6 +14,10 @@
     height: auto;
     grid-template-columns: 1fr 3fr;
   }
+  @include lg {
+    width: 99%;
+    padding: 0;
+  }
 }
 
 .loginLogo {
@@ -26,9 +30,15 @@
   @include sm {
     width: 90px;
   }
+  @include lg {
+    margin-left: 20px;
+  }
 }
 .loginNavIcons {
   @include sm {
+    display: none;
+  }
+  @include lg {
     display: none;
   }
   width: 100%;
@@ -77,6 +87,12 @@
     margin-left: auto;
     width: 200px;
   }
+  @include lg {
+    align-items: center;
+    justify-content: end;
+    margin-left: 90%;
+    width: 200px;
+  }
   .join {
     min-height: 30px;
     padding: 8px;
@@ -114,7 +130,6 @@
       font-size: 12px;
       width: 80px;
       margin-right: 5px;
-
     }
     &:hover {
       background-color: #cde6ff;

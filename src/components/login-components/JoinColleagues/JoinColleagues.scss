@@ -15,12 +15,21 @@
       height: auto;
     }
 
+    @include sm {
+      position: relative;
+      height: auto;
+      width: 100vw;
+    }
+
   .joinSubContainer {
     width: 1140px;
     margin-top: 150px;
     @include sm {
       margin-top: 50px;
       width: 90%;
+    }
+    @include lg {
+      width: 90%; 
     }
     h1 {
       font-size: 48px;
