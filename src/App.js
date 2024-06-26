@@ -6,7 +6,11 @@ import Home from "./pages/Home/Home";
 function App() {
   return (
     <div className="App">
+      <div className="home-header">
+        
+      </div>
       <Router>
+
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route path="/home" element={<Home />}>
