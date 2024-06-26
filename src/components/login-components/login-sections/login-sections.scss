@@ -17,7 +17,7 @@
   }
   .sections-header {
     flex: 1;
-
+    
     h1 {
       font-size: 48px;
       font-weight: 100;
@@ -33,7 +33,7 @@
         padding: 0 20px;
         font-weight: 400;
         font-size: 48px;
-        width: 100%;
+        width: 98%;
       }
     }
 
@@ -139,4 +139,7 @@
       padding: 0;
     }
   }
+  @include lg {
+      display: none;
+    }
 }
