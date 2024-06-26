@@ -41,7 +41,7 @@ const Login = () => {
             .
           </p>
 
-          <p className="new-to-linkedin?">
+          <p className="new-to-linkedin">
             New to LinkedIn? <a href="##">Join now</a>
           </p>
 
