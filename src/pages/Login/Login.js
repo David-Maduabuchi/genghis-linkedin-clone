@@ -7,8 +7,13 @@ import ConectAndLearn from "../../components/login-components/ConnectAndLearn/Co
 import FindFriends from "../../components/login-components/FindFriends/FindFriends";
 import JoinColleagues from "../../components/login-components/JoinColleagues/JoinColleagues";
 import Footer from "../../components/login-components/LoginFooter/LoginFooter";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const redirect = useNavigate();
+  const handleSignIn = () => {
+    redirect("/dashboard/home")
+  }
   return (
     <div className="main-login-container">
       <LoginHeader />
@@ -17,7 +22,7 @@ const Login = () => {
       <section className="login-section">
         <form method="POST" className="loginForm">
           {/* Each from group is an input field */}
-          <div className="google-signin-button">
+          <div className="google-signin-button" onClick={()=> {handleSignIn()}}>
             Continue with Google{" "}
             <img src="google.svg" alt="" className="googleauth" />
           </div>
