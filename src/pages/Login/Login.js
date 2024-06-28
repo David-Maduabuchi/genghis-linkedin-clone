@@ -8,8 +8,12 @@ import FindFriends from "../../components/login-components/FindFriends/FindFrien
 import JoinColleagues from "../../components/login-components/JoinColleagues/JoinColleagues";
 import Footer from "../../components/login-components/LoginFooter/LoginFooter";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Login = () => {
+   useEffect(() => {
+     document.title = "LinkedIn | Login or Signup";
+   });
   const redirect = useNavigate();
   const handleSignIn = () => {
     redirect("/dashboard/home")
