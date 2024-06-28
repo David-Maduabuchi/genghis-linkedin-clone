@@ -1,7 +1,10 @@
+import React from 'react'
 
 const HomeHeader = () => {
   return (
-    <div>HomeHeader</div>
+    <div>
+      <img src="/nav-home.svg" alt="" />
+    </div>
   )
 }
 
