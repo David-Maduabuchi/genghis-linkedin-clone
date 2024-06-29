@@ -3,13 +3,23 @@
 .homeContainer {
   width: 98vw;
   margin: 0;
-  .home-header {
-    width: 100%;
-    height: 10%;
-    border: 1px solid;
-    position: fixed;
+  .homeContainerForLargeScreens {
     @include sm {
-        top: 90%;
+        display: none;
+      }
+      
+    .home-header-large-screens {
+      width: 100%;
+      height: auto;
+      border: 1px solid;
+      
+    }
+  }
+
+  .homeContainerForSmallScreens {
+    display: none;
+    @include sm {
+      display: contents;
     }
   }
 

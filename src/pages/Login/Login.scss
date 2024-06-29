@@ -7,6 +7,13 @@
 
   @include lg {
     padding: 0;
+    overflow: hidden;
+  }
+
+  @include xl {
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
   }
 
   display: flex;
