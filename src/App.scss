@@ -3,6 +3,7 @@
 .homeContainer {
   width: 98vw;
   margin: 0;
+  overflow: hidden;
   .homeContainerForLargeScreens {
     @include sm {
         display: none;
@@ -11,7 +12,6 @@
     .home-header-large-screens {
       width: 100%;
       height: auto;
-      border: 1px solid;
       
     }
   }

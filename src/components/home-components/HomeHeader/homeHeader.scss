@@ -6,8 +6,7 @@
   height: 55px;
   margin: 5px auto;
   width: 85%;
-  border: 1px solid red;
-
+  
   .headerInputContainer {
     height: 100%;
     width: 400px;
@@ -23,11 +22,8 @@
       padding: 5px;
       transition: width 500ms ease;
       width: 200px;
-      @include lg {
-        width: 0px;
-        padding: 0;
-      }
 
+      
       img {
         width: 16px;
         height: 16px;
@@ -45,14 +41,6 @@
       width: 300px;
       border: 2px solid;
 
-      @include lg {
-        border: none;
-        width: 80%;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        height: 50px;
-      }
     }
   }
 
