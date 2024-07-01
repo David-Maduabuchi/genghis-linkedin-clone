@@ -11,6 +11,7 @@ import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import HomeHeader from "./components/home-components/HomeHeader/HomeHeader";
 import SmallScreenHomeHeader from "./components/home-components/smallScreenHomeHeader/SmallScreenHomeHeader";
+import SmallBaseNav from "./components/home-components/smallScreeBaseNav/SmallBaseNav";
 
 //Here we define the layout of our dashboard in our App
 
@@ -33,6 +34,9 @@ const HomeLayout = () => {
         </div>
         <div className="small-screen-contentContainer">
           <Outlet />
+        </div>
+        <div className="smallBaseNav">
+          <SmallBaseNav />
         </div>
       </div>
     </div>

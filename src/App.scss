@@ -12,8 +12,8 @@
     .home-header-large-screens {
       width: 100%;
       height: auto;
-      
     }
+
   }
 
   .homeContainerForSmallScreens {
@@ -25,5 +25,12 @@
 
   .contentContainer {
     width: 100%;
+  }
+  .smallBaseNav{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
   }
 }

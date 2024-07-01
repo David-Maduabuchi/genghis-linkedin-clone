@@ -6,7 +6,7 @@
   height: 55px;
   margin: 5px auto;
   width: 85%;
-  
+
   .headerInputContainer {
     height: 100%;
     width: 400px;
@@ -23,7 +23,6 @@
       transition: width 500ms ease;
       width: 200px;
 
-      
       img {
         width: 16px;
         height: 16px;
@@ -40,7 +39,6 @@
     .grow {
       width: 300px;
       border: 2px solid;
-
     }
   }
 
@@ -52,17 +50,25 @@
     width: 600px;
 
     .active {
-      color: black; //this ensures the color of the svg changes when it is clcked on
+      color: black;
+
+      //this ensures the color of the svg changes when it is clcked on
+    }
+    .disable-span {
+      span {
+        display: none;
+      }
     }
 
-    a {
+    section {
       display: flex;
       flex-direction: column;
       align-items: center;
       font-size: 12px;
       width: 100px;
-      position: relative;
-      border: 1px solid; /* Ensure relative positioning for the ::after pseudo-element */
+      color: gray;
+      cursor: pointer;
+      position: relative; /* Ensure relative positioning for the ::after pseudo-element */
 
       &:hover {
         color: black;
@@ -71,6 +77,7 @@
       span {
         display: flex;
         align-items: center;
+        justify-content: center;
       }
 
       /* Styles for the underline */
@@ -115,5 +122,24 @@
         }
       }
     }
+  }
+}
+.badge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .inner-badge {
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 5px;
   }
 }

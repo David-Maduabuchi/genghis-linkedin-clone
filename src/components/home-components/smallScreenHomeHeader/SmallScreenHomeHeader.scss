@@ -1,0 +1,36 @@
+.smallHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  a {
+    .user-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+  }
+  .searchContainer {
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    font-size: 16px;
+    background: rgb(216, 234, 240);
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-weight: 700;
+    }
+  }
+}
