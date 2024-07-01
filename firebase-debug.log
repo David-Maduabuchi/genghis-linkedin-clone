@@ -1,0 +1,21 @@
+[debug] [2024-07-01T16:57:39.823Z] ----------------------------------------------------------------------
+[debug] [2024-07-01T16:57:39.827Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-01T16:57:39.828Z] CLI Version:   13.10.2
+[debug] [2024-07-01T16:57:39.829Z] Platform:      win32
+[debug] [2024-07-01T16:57:39.829Z] Node Version:  v22.2.0
+[debug] [2024-07-01T16:57:39.829Z] Time:          Mon Jul 01 2024 17:57:39 GMT+0100 (West Africa Standard Time)
+[debug] [2024-07-01T16:57:39.830Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-01T16:57:39.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-01T16:57:39.977Z] > authorizing via signed-in user (david.maduabuchi.243854@unn.edu.ng)
+[debug] [2024-07-01T16:57:39.977Z] [iam] checking project genghis-linkedin-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-01T16:57:39.981Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-linkedin-clone:testIamPermissions [none]
+[debug] [2024-07-01T16:57:39.982Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-linkedin-clone:testIamPermissions x-goog-quota-user=projects/genghis-linkedin-clone
+[debug] [2024-07-01T16:57:39.982Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-linkedin-clone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-01T16:57:40.109Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/genghis-linkedin-clone:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/genghis-linkedin-clone:testIamPermissions failed, reason: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2024-07-01T16:57:40.109Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/genghis-linkedin-clone:testIamPermissions
+[debug] [2024-07-01T16:57:40.110Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genghis-linkedin-clone [none]
+[debug] [2024-07-01T16:57:40.130Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/genghis-linkedin-clone, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/genghis-linkedin-clone failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2024-07-01T16:57:40.131Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/genghis-linkedin-clone (original: request to https://firebase.googleapis.com/v1beta1/projects/genghis-linkedin-clone failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
