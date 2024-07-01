@@ -1,20 +1,25 @@
 .smallHeaderContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .user-icon {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
+
     }
   }
   .searchContainer {
     width: 100%;
-    margin: 0 5px;
+    margin: 0 10px;
     display: flex;
-    
+    border-radius: 2px;
     align-items: center;
     padding: 5px;
     gap: 5px;
