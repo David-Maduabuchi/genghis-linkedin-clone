@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "./Home.scss"
+import HomeProfile from '../../components/home-components/home-profile/HomeProfile';
 
 const Home = () => {
    useEffect(() => {
@@ -7,7 +8,9 @@ const Home = () => {
    });
   return (
     <div className="home">
-      <div className="home-profile"></div>
+      <div className="home-profile">
+      <HomeProfile />
+      </div>
       <div className="home-mainFeed"></div>
       <div className="home-addToFeed"></div>
     </div>

@@ -1,10 +1,10 @@
 @import "./sass/responsive.scss";
-
+@import "./sass/variable.scss";
 .homeContainer {
   margin: 0;
   width: 100vw;
-  overflow: hidden;
-  background-color: rgb(233, 229, 229);
+  overflow-x: hidden;
+  background-color: $home-border;
   .homeContainerForLargeScreens {
     @include sm {
       display: none;
@@ -15,6 +15,7 @@
       height: auto;
       position: fixed;
       top: 0;
+      z-index: 1;
       background-color: white;
       border: 1px solid rgb(212, 212, 212);
     }
