@@ -61,7 +61,7 @@ const HomeProfile = () => {
         <section className="recentsContent">
           {isRecentsOpen && <div>Coming Soon</div>}
         </section>
-          
+
         <section className="groups">
           <NavLink to={""}>
             <span className="recentsBlueText">Groups</span>
@@ -79,6 +79,13 @@ const HomeProfile = () => {
         {/* This controls the content of some of the groups that the user is in */}
         <section className="groupsContent">
           {isGroupsOpen && <div>Coming Soon</div>}
+        </section>
+
+        <section className=" events">
+          <NavLink to={""}>
+            <span className="recentsBlueText">Events</span>
+          </NavLink>
+          <img src="/plus-icon.svg" alt="" width={12} height={12} />{" "}
         </section>
       </div>
     </div>

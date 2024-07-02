@@ -126,7 +126,7 @@
   .recents-groups {
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid rgb(204, 204, 204);
 
     .recents {
@@ -134,7 +134,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 12px;
-      padding: 10px 0;
+      padding: 5px 10px;
       height: 20px;
 
       img {
@@ -156,37 +156,66 @@
     .recentsContent {
       font-size: 12px;
       margin-top: 0;
+      padding: 0 10px;
     }
 
     .groups {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20px;
-    span {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 20px;
+      span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #0a66c2;
+      }
+
+      img {
+        display: none;
+        padding: 10px;
+        &:hover {
+          background-color: $home-highlight;
+        }
+      }
+      // this controls Group Elements when hovering
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+        img {
+          display: flex;
+          border-radius: 50%;
+        }
+      }
+    }
+    // this controls the Groups contents
+    .groupsContent {
       font-size: 12px;
-      font-weight: 700;
-      color: #0a66c2;
+      margin-top: 0;
+      padding: 0 10px;
     }
 
-    img {
-      display: none;
-      padding: 10px;
-      &:hover {
-        background-color: $home-highlight;
-      }
-    }
-    // this controls Group Elements when hovering
-    &:hover {
+    .events {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:0 10px;
+      height: 20px;
+
       span {
-        text-decoration: underline;
+        font-size: 12px;
       }
       img {
-        display: flex;
+        width: 12px;
+        height: 12px;
+        padding: 10px;
         border-radius: 50%;
+
+        &:hover {
+          background-color: $home-highlight;
+        }
       }
     }
-    
-  }
   }
 }
