@@ -61,7 +61,6 @@ const HomeProfile = () => {
         <section className="recentsContent">
           {isRecentsOpen && <div>Coming Soon</div>}
         </section>
-
         <section className="groups">
           <NavLink to={""}>
             <span className="recentsBlueText">Groups</span>
@@ -80,12 +79,23 @@ const HomeProfile = () => {
         <section className="groupsContent">
           {isGroupsOpen && <div>Coming Soon</div>}
         </section>
-
-        <section className=" events">
+        <section className="events">
           <NavLink to={""}>
             <span className="recentsBlueText">Events</span>
           </NavLink>
           <img src="/plus-icon.svg" alt="" width={12} height={12} />{" "}
+        </section>
+        <section className="events followed-hashtags">
+          <NavLink to={""}>
+            <span className="recentsBlueText">Followed Hashtags</span>
+          </NavLink>
+        </section>
+        <section className="saved-items">
+          <span className="discover-more">
+            <NavLink to={""} className={"discover-more"}>
+              Discover more
+            </NavLink>
+          </span>
         </section>
       </div>
     </div>

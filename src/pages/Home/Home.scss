@@ -2,15 +2,26 @@
   display: flex;
   gap: 20px;
   padding: 0 100px;
-  .home-profile {
-    border-radius: 20px;
-    width: 30%;
+
+  .scrollcontainer {
+    display: flex;  
+    border: 1px solid red;
+    width: 100%;
+    gap: 20px;
+    height: 1000px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+      .home-profile {
+      border-radius: 20px;
+      width: 30%;
+    }
+    .home-mainFeed {
+      border: 1px solid;
+      width: 75%;
+      height:auto;
+    }
   }
-  .home-mainFeed {
-    border: 1px solid;
-    width: 75%;
-    height: 200px;
-  }
+
   .home-addToFeed {
     border: 1px solid;
     width: 30%;
