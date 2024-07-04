@@ -13,6 +13,7 @@
     border-radius: 10px;
     background-color: white;
     border: 1px solid rgb(204, 204, 204);
+    box-shadow: $box-shadow-home;
 
     section {
       width: 100%;
@@ -130,6 +131,7 @@
   }
 
   .recents-groups {
+    box-shadow: $box-shadow-home;
     background-color: white;
     border-radius: 10px;
     border: 1px solid rgb(204, 204, 204);

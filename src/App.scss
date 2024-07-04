@@ -5,6 +5,7 @@
   width: 100vw;
   overflow-x: hidden;
   background-color: $home-border;
+
   .homeContainerForLargeScreens {
     @include sm {
       display: none;

@@ -10,11 +10,13 @@ const HomeHeader = () => {
 
   const handleNavClick = (itemName) => {
     setActiveNavItem(itemName);
-    removeNotificationSpan();
+    removeNotificationSpan(itemName);
   };
 
-  const removeNotificationSpan = () => {
-    setDisableSpan(true);
+  const removeNotificationSpan = (itemName) => {
+    if (itemName === "notifications") {
+      setDisableSpan(true);
+    }
   };
   const handleIconClick = () => {
     if (inputRef.current) {
@@ -47,28 +49,28 @@ const HomeHeader = () => {
         {/* HOME ICON */}
         <NavLink to={"/dashboard/home"}>
           <section
-          className={`nav-item ${activeNavItem === "Home" ? "active" : ""}`}
-          onClick={() => handleNavClick("Home")}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            data-supported-dps="24x24"
-            fill="currentColor"
-            width="24"
-            height="24"
-            focusable="false"
+            className={`nav-item ${activeNavItem === "Home" ? "active" : ""}`}
+            onClick={() => handleNavClick("Home")}
           >
-            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
-          </svg>
-          <div className="homeNavIconTitle ">Home</div>
-          {/* This is the Home Icon Badge */}
-          <span className="badge">
-            <span className="inner-badge"></span>
-          </span>
-        </section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+            </svg>
+            <div className="homeNavIconTitle ">Home</div>
+            {/* This is the Home Icon Badge */}
+            <span className="badge">
+              <span className="inner-badge"></span>
+            </span>
+          </section>
         </NavLink>
-      
+
         {/* MY NETWORK ICON  */}
         <section
           className={`nav-item ${
