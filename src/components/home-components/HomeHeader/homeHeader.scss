@@ -3,10 +3,9 @@
 .homeHeaderContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 55px;
+  height: 100%;
   margin: 5px auto;
-  width: 85%;
+  width: 1150px;
 
   .headerInputContainer {
     height: 100%;
@@ -22,7 +21,7 @@
       border-radius: 5px;
       padding: 5px;
       transition: width 500ms ease;
-      width: 200px;
+      width: 250px;
 
       img {
         width: 16px;
@@ -38,7 +37,7 @@
     }
 
     .grow {
-      width: 300px;
+      width: 350px;
       border: 2px solid;
     }
   }

@@ -7,8 +7,11 @@ const Home = () => {
   useEffect(() => {
     document.title = "Feed | LinkedIn-Clone";
   });
+  
   return (
-    <div className="home">
+    <div
+      className="home"
+    >
       <div className="scrollcontainer">
         <div className="home-profile">
           <HomeProfile />
@@ -17,7 +20,7 @@ const Home = () => {
       </div>
 
       <div className="home-addToFeed">
-        <HomeAddToFeed /> 
+        <HomeAddToFeed />
       </div>
     </div>
   );
