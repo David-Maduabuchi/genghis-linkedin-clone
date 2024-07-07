@@ -1,3 +1,82 @@
+export const homeAddToheaderData = [
+  {
+    id: 1,
+    name: "David Maduabuchi",
+    img: "/user.svg",
+    jobTitle: "Software Developer",
+    skill: "Reactjs, VueJs, AngularJs, HTML",
+  },
+  {
+    id: 2,
+    name: "Nnaekpe Nnaemeka",
+    img: "/user.svg",
+    jobTitle: "Game Developer",
+    skill: "Unity, C++, Maya, Blender, HTML",
+  },
+  {
+    id: 3,
+    name: "Ezendidika Sandra",
+    img: "/user.svg",
+    jobTitle: "Research Scientist",
+    skill: "Biology Research Scientist at the University of Nigeria, Nsukka",
+  },
+];
+
+export const BusinessServicesData = [
+  {
+    title: "Hire on LinkedIn",
+    description: "Find, attract and recruit talent",
+    link: "",
+  },
+  {
+    title: "Sell with LinkedIn",
+    description: "Unlock sales opportunities",
+    link: "",
+  },
+  {
+    title: "Post a job for free",
+    description: "Get qualified applicants quickly",
+    link: "",
+  },
+  {
+    title: "Advertise on LinkedIn",
+    description: "Acquire customers and grow your business",
+    link: "",
+  },
+  {
+    title: "Learn with LinkedIn",
+    description: "Courses to develop your employees",
+    link: "",
+  },
+  {
+    title: "Admin Center",
+    description: "Manage billing and account details",
+    link: "",
+  },
+];
+export const PrivacyData = [
+  {
+    title: "Privacy Policy",
+    link: "",
+  },
+  {
+    title: "User Agreement",
+    link: "",
+  },
+  {
+    title: "Pages terms",
+    link: "",
+  },
+  {
+    title: "Cookie Policy",
+    link: "",
+  },
+  {
+    title: "Copyright Policy",
+    link: "",
+  },
+];
+
 export const sectionsData = [
   {
     header: "Explore collaborative articles",
