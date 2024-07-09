@@ -1,9 +1,16 @@
+
+@import "../../sass/responsive.scss";
 .home {
   display: flex;
   gap: 20px;
   margin: 0 100px;
   width: 1150px;
   margin: auto;
+  // this controls the width of the home screen in small containers
+  @include sm {
+    width: 100px;
+    border: 1px solid red;
+  }
   .scrollcontainer {
     display: flex;
     gap: 20px;
@@ -11,18 +18,32 @@
     overflow-y: scroll;
     width: 100%;
     scrollbar-width: none;
+
+    @include sm {
+      width: 100px;
+      border: 1px solid;
+    }
     .home-profile {
       border-radius: 20px;
       width: 320px;
+
+      @include sm {
+        display: none;
+      }
     }
     .home-mainFeed {
       border: 1px solid;
       width: 100%;
       height: auto;
+
+      
     }
   }
 
   .home-addToFeed {
      width: 350px;
+     @include sm {
+      display: none;
+     }
   }
 }

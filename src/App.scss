@@ -6,6 +6,10 @@
   overflow-x: hidden;
   background-color: $home-border;
 
+  @include sm {
+    overflow: scroll;
+  }
+
   .homeContainerForLargeScreens {
     @include sm {
       display: none;
