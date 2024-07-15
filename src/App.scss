@@ -34,7 +34,10 @@
     @include sm {
       display: contents;
     }
-
+    .home-header-small-screens {
+      position: fixed;
+      top: 0;
+    }
     .small-screen-contentContainer {
       width: 100%;
     }
