@@ -1,0 +1,266 @@
+@import "../../../sass/variable.scss";
+.homeProfileContainer {
+  width: 100%;
+  border-radius: 10px;
+  color: $soft-text;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  // this is the profile block
+  .profileContainer {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid $general-border-color;
+    box-shadow: $box-shadow-home;
+
+    section {
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $home-highlight;
+      .profilePishurContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 60px;
+
+        .card-svg {
+          width: 100%;
+          height: 100%;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+        .profilepishur {
+          width: 75px;
+          position: absolute;
+          top: 50%;
+          border-radius: 50%;
+          height: 75px;
+        }
+      }
+      .profile-userName {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 600;
+
+        color: $black-text;
+      }
+
+      .jobtitle {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 4px;
+        text-align: center;
+      }
+    }
+    .profileAnalytics {
+      padding: 10px 0;
+      // border-bottom: 1px solid $home-border;
+      div {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        &:hover {
+          background-color: $home-highlight;
+        }
+        .blueText {
+          color: #0a66c2;
+        }
+      }
+    }
+
+    .home-reactivateAI {
+      &:hover {
+        background-color: $home-highlight;
+        cursor: pointer;
+
+        .reactivate-AI-Text {
+          color: #0a66c2;
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        padding: 2px 10px;
+        font-size: 12px;
+      }
+
+      .reactivate-AI-Text {
+        display: flex;
+        gap: 5px;
+
+        color: $black-text;
+        font-weight: 700;
+
+        .small-brown-square {
+          width: 12px;
+          height: 12px;
+          background-color: rgb(255, 145, 0);
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .savedItems {
+      display: flex;
+      font-size: 12px;
+      font-weight: 700;
+      align-items: center;
+      color: $black-text;
+      justify-content: start;
+      cursor: pointer;
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      &:hover {
+        background-color: $home-highlight;
+      }
+
+      img {
+        padding: 10px;
+      }
+    }
+  }
+
+  .recents-groups {
+    box-shadow: $box-shadow-home;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    padding-top: 10px;
+
+    .recents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      padding: 5px 10px;
+      height: 20px;
+
+      img {
+        display: none;
+        padding: 10px;
+        &:hover {
+          background-color: $home-highlight;
+        }
+      }
+      // When I hover over recents, display the svg
+      &:hover {
+        img {
+          display: flex;
+          border-radius: 50%;
+        }
+      }
+    }
+    // this is the styling for the recents content
+    .recentsContent {
+      font-size: 12px;
+      margin-top: 0;
+      padding: 0 10px;
+    }
+
+    .groups {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 20px;
+      span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #0a66c2;
+      }
+
+      img {
+        display: none;
+        padding: 10px;
+        &:hover {
+          background-color: $home-highlight;
+        }
+      }
+      // this controls Group Elements when hovering
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+        img {
+          display: flex;
+          border-radius: 50%;
+        }
+      }
+    }
+    // this controls the Groups contents
+    .groupsContent {
+      font-size: 12px;
+      margin-top: 0;
+      padding: 0 10px;
+    }
+
+    .events {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      height: 20px;
+
+      span {
+        font-size: 12px;
+        color: #0a66c2;
+      }
+      img {
+        width: 12px;
+        height: 12px;
+        padding: 10px;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $home-highlight;
+        }
+      }
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .saved-items {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.5s;
+      span {
+        width: 100%;
+        height: 100%;
+        color: $soft-text;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+        .discover-more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:hover {
+        background-color: $home-highlight;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}

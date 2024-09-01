@@ -1,0 +1,52 @@
+@import "../../../sass/variable.scss";
+.posts-container {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  .post-container-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .post-image-container {
+      img {
+        width: 50px;
+      }
+    }
+    .post-header-info {
+      .post-username {
+        font-size: 14px;
+        color: $black-text;
+        font-weight: 500;
+      }
+      .post-jobTitle {
+        color: $soft-text;
+        font-weight: 400;
+        font-size: 12px;
+      }
+      .post-dateCreated {
+        display: flex;
+        color: $soft-text;
+        font-weight: 400;
+        font-size: 12px;
+        align-items: center;
+        gap: 5px;
+        .dot {
+            width: 3px;
+            height: 3px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+      }
+    }
+    .actions-button {
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+  }
+}

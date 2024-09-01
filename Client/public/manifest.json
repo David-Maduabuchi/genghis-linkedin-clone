@@ -1,0 +1,9 @@
+{
+  "short_name": "LinkedIn Clone App",
+  "name": "Perfect LinkedIn Clone",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,56 @@
+@import "../../../sass/responsive.scss";
+.joinColleagues {
+  height: 980px;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  background-image: url("../../../../public/join-colleagues.png");
+  left: 0;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.9);
+    @include sm { 
+      background-image: none;
+      position: relative;
+      height: auto;
+    }
+
+    @include sm {
+      position: relative;
+      height: auto;
+      width: 100vw;
+    }
+
+  .joinSubContainer {
+    width: 1140px;
+    margin-top: 150px;
+    @include sm {
+      margin-top: 50px;
+      width: 90%;
+    }
+    @include lg {
+      width: 90%; 
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 200;
+      @include sm {
+        font-size: 32px;
+      }
+    }
+    button {
+      padding: 12px 20px;
+      border-radius: 20px;
+      border: 1px solid #0a66c2;
+      background: #0a66c2;
+      cursor: pointer;
+      color: white;
+      font-size: 12px;
+      @include sm {
+        margin: 40px 0;
+        font-size: 16px;
+      }
+    }
+
+  }
+}

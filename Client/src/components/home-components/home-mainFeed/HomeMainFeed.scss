@@ -1,0 +1,250 @@
+@import "../../../sass/variable.scss";
+@import "../../../sass/responsive.scss";
+
+.homeMainFeedContainer {
+  width: 100%;
+  height: 100%;
+  .componentHeader {
+    height: auto;
+    background-color: #fff;
+    padding: 20px 0 10px 0;
+    border-radius: 10px;
+    border: 1px solid $general-border-color;
+
+    @include sm {
+      display: none;
+    }
+
+    .post-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 62px;
+
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 8px 0 10px;
+      }
+      div {
+        width: 100%;
+        border-radius: 40px;
+        border: 1.5px solid rgb(170, 170, 170);
+        height: 48px;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(235, 235, 235);
+          span {
+            color: $black-text;
+          }
+        }
+
+        span {
+          font-size: 15px;
+          color: $soft-text;
+          margin-left: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .post-icons-container {
+      width: 90%;
+      margin-left: auto;
+      height: 55px;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 10px;
+      .post-icons {
+        width: auto;
+        border-radius: 5px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(80, 80, 80);
+        &:hover {
+          background-color: rgb(231, 231, 231);
+        }
+        svg {
+          color: brown;
+          width: 26px;
+          height: 26px;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .post-popup {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .post-subcontainer {
+      background-color: #fff;
+      width: 700px;
+      border-radius: 10px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+
+      // IMAGE SECTION
+      .image-preview-container {
+        width: 100%;
+        height: 200px;
+
+        .image-preview {
+          width: 99%;
+          position: relative;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .remove-button {
+            width: 20px;
+            position: absolute;
+            bottom: 90%;
+            cursor: pointer;
+            right: 0;
+          }
+        }
+      }
+
+      .popup-cancel-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 10px;
+        .popup-cancel-icon {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          margin-bottom: auto;
+          padding: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+          &:hover {
+            background-color: $home-highlight;
+          }
+        }
+
+        .post-profile {
+          display: flex;
+          gap: 10px;
+          padding: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(235, 235, 235);
+          }
+
+          img {
+            width: 60px;
+            border-radius: 50%;
+          }
+
+          .popup-down-icon {
+            width: 20px;
+            height: 20px;
+          }
+
+          span {
+            h1 {
+              font-size: 20px;
+              font-weight: 500;
+              color: $black-text;
+            }
+            p {
+              font-size: 14px;
+              color: rgb(63, 63, 63);
+            }
+          }
+        }
+      }
+      textarea {
+        width: 95%;
+        outline: none;
+        border: none;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: $black-text;
+        line-height: 1.5;
+        height: 150px;
+      }
+      hr {
+        width: 99%;
+        margin-top: 10px;
+      }
+
+      .post-button {
+        margin-top: auto;
+        margin-bottom: 10px;
+        display: flex;
+        button {
+          transition: all 1s ease;
+          margin-right: 10px;
+          margin-left: auto;
+        }
+        .button {
+          background-color: #0a66c2;
+          width: 63px;
+          color: white;
+          height: 35px;
+          border: none;
+          cursor: pointer;
+          border-radius: 20px;
+        }
+      }
+      //this controls the small animation you see when the post wan change
+    }
+  }
+
+
+  
+}
+
+//this controls the disabled button
+.disabled-button {
+  cursor: not-allowed; /* Default disabled cursor */
+  color: $soft-text;
+  font-weight: 700;
+  font-size: 16px;
+  width: 63px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.add-image-img {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+

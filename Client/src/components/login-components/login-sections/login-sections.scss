@@ -1,0 +1,150 @@
+@import "../../../sass/responsive.scss";
+.sections-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  @include sm {
+    padding: 20px 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include lg {
+    padding: 0;
+    width: 100vw;
+    flex-direction: column;
+    margin: 100px 0;
+  }
+  .sections-header {
+    flex: 1;
+    
+    h1 {
+      font-size: 48px;
+      font-weight: 100;
+      width: 420px;
+      padding: 0 100px;
+      @include sm {
+        padding: 0;
+        width: 80%;
+        font-weight: 400;
+        font-size: 32px;
+      }
+      @include lg {
+        padding: 0 20px;
+        font-weight: 400;
+        font-size: 48px;
+        width: 98%;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      font-weight: 100;
+      width: 420px;
+      padding: 0 100px;
+      width: 90%;
+      @include sm {
+        padding: 0;
+        width: 100%;
+      }
+      @include lg {
+        padding: 0 20px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .diff-buttons-first-batch {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 0 20px;
+    @include lg {
+      padding: 20px;
+    }
+    h3 {
+      width: 100%;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #5b5b5c;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+    button {
+      padding: 12px 24px;
+      margin: 0 6px 12px 0;
+      border-radius: 24px;
+      height: 48px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 100;
+      background-color: transparent;
+      border: 1px solid;
+      @include sm {
+        height: auto;
+        width: auto;
+        font-size: 16px;
+        margin: 0 20px 15px 0;
+      }
+    }
+
+    .toggle-button {
+      padding: 12px 24px;
+      margin: 0 6px 12px 0;
+      border-radius: 24px;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: #eee;
+      height: 30px;
+      width: 170px;
+    }
+
+    button.last-button:hover {
+      background-color: #daecff; // Example hover effect for the last button
+      color: #000;
+      border-color: #000;
+    }
+    button:hover {
+      background: #e7e6e6;
+    }
+  }
+}
+
+.show-more-show-less {
+  width: 100%;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 12px;
+    }
+  }
+}
+.section-colored-header {
+  background: #ebebeb;
+  h1 {
+    color: #b24040;
+    font-size: 50px;
+    padding: 0 100px;
+
+    @include lg {
+      padding: 0;
+    }
+  }
+  @include lg {
+      display: none;
+    }
+}
+
+
+.header-button {
+background: #f0f0f0
+;}
